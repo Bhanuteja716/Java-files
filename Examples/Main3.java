@@ -14,9 +14,16 @@ class Person
 }
 class Employee extends Person
 {
-    Employee(String name, int age)
+    public String ID;
+    public int salary;
+    Employee(String name, int age, String ID, int salary)
     {
          super(name,age);
+         this.ID = ID;
+         this.salary = salary;
+         System.out.println("The ID of person is:"+ID);
+         System.out.println("The salary of the person is:"+salary);
+         
     }
 }
 class Main3
@@ -24,6 +31,6 @@ class Main3
     public static void main(String args[])
     {
         Person p = new Person("Bhanu",17);
-        Employee e = new Employee("Teja",19);
-    }
+        Employee e = new Employee("Teja",20,"CSE24210",1900000);
+   }
 }
