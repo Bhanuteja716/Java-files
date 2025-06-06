@@ -1,0 +1,19 @@
+import java.io.*;
+class exception3
+{
+    public static void readFile() throws Exception
+    {
+         Filereader fr = new Filereader("Example.txt");
+         fr.close();
+    }
+    public static void main(String args[])
+    {
+         try{
+         readFile();
+         }
+        catch(Exception e)
+        {
+            System.out.println("Error caught:"+e.getMessage());
+        }
+   }
+}
